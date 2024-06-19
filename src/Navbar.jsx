@@ -2,6 +2,7 @@ import { Heart, Menu, X } from 'lucide-react';
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import GetStarted from './components/GetStarted';
+import FaqButton from './components/FaqButton';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,23 +16,17 @@ const Navbar = () => {
 
   return (
     <nav className="fixed p-4 w-full z-20 top-0 space-y-2">
-        
-      <div class="circlePosition w-11/12 h-11/12 bg-[#367ed142] rounded-[100%] absolute -z-10 blur-[100px] flex justify-center items-center">
-        <div class="circle w-[17rem] h-[17rem] bg-[#5743ee42] rounded-[100%]" />
+      <div className="circlePosition w-11/12 h-11/12 bg-[#367ed142] rounded-[100%] absolute -z-10 blur-[100px] flex justify-center items-center">
+        <div className="circle w-[17rem] h-[17rem] bg-[#5743ee42] rounded-[100%]" />
       </div>
 
-      <div className="px-6 py-4 container mx-auto flex justify-between items-center rounded-2xl border border-gray-700 shadow-lg backdrop-blur-lg">
-        {/* <img 
-            src='/assets/lyfelynk.png'
-            alt="LyfeLynk"
-            className='w-36 md:w-44'
-        /> */}
-        <button className='flex items-center space-x-2 click-pointer' onClick={() => scroll.scrollToTop()}>
-            <Heart className='text-blue-600 w-8 h-8'/>
-            <span className='font-bold text-3xl font-prompt'>LyfeLynk</span>
+      <div className="px-6 py-4 container mx-auto flex justify-between items-center rounded-2xl border border-gray-700 shadow-lg backdrop-blur-md">
+        <button className="flex items-center space-x-2 cursor-pointer">
+          <Heart className="text-blue-600 w-8 h-8" />
+          <span className="font-bold text-3xl font-prompt">LyfeLynk</span>
         </button>
-        <div className="hidden md:flex space-x-6 items-center">
-            {Object.keys(links).map((key) => (
+        <div className="hidden md:flex space-x-8 items-center">
+          {Object.keys(links).map((key) => (
             <Link
               key={key}
               activeClass="active"
@@ -45,7 +40,10 @@ const Navbar = () => {
               {links[key]}
             </Link>
           ))}
-          <GetStarted/>
+          <div className='flex space-x-6'>
+            <FaqButton/>
+            <GetStarted/>
+          </div>
         </div>
         <div className="md:hidden">
           {isOpen ? (
@@ -71,12 +69,9 @@ const Navbar = () => {
             {links[key]}
           </Link>
         ))}
-        <GetStarted/>
+        <FaqButton/>
+        <GetStarted />
       </div>
-      
-      {/* Blob */}
-      {/* <div className="absolute top-80 right-80 w-64 h-64 bg-gradient-to-bl from-sky-500 via-grey-800 to-black-700 rounded-full blur-3xl -z-10"></div> */}
-
     </nav>
   );
 };
