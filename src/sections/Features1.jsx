@@ -32,7 +32,7 @@ const Features1 = () => {
   ];
 
   return (
-    <section className="py-6 md:py-12 px-6">
+    <section className="pt-6 pb-12 md:pt-12 md:pb-24 px-6">
       <div className="container mx-auto flex flex-col md:flex-row">
         <div className="md:w-1/3 p-4">
           <h1 className='font-space-grotesk font-bold text-4xl md:text-8xl py-4'>Your Health, Your Data:</h1>
