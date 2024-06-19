@@ -2,6 +2,7 @@ import React from 'react';
 import GetInTouch from "../components/GetInTouch";
 import GetStarted from "../components/GetStarted";
 import './Hero.css';
+import ShinyBadgeButton from '../components/ShinyBadge';
 
 const Hero = () => {
   return (

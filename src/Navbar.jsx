@@ -35,7 +35,7 @@ const Navbar = () => {
               smooth={true}
               offset={-70}
               duration={500}
-              className="text-gray-400 hover:text-white font-black text-sm hover:underline cursor-pointer"
+              className="text-gray-200 hover:text-white font-black text-sm hover:underline cursor-pointer"
             >
               {links[key]}
             </Link>
