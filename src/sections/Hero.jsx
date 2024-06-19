@@ -21,7 +21,7 @@ const Hero = () => {
             <GetStarted />
           </div>
 
-          <p className="py-2 md:pr-36 font-roboto-mono font-medium md:text-lg text-center md:text-left">
+          <p className="md:pr-36 font-roboto-mono font-medium md:text-lg text-center md:text-left">
             Access all your health data with a single click and make it work for you.
           </p>
         </div>

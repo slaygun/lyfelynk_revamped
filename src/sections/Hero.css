@@ -1,24 +1,24 @@
 @keyframes customAnimation {
-    0% {
-      transform: translate(0, 0);
-    }
-    20% {
-      transform: translate(20px, 0);
-    }
-    40% {
-      transform: translate(-20px, -20px);
-    }
-    60% {
-      transform: translate(20px, 0);
-    }
-    80% {
-      transform: translate(-20px, 20px);
-    }
-    100% {
-      transform: translate(0, 0);
-    }
+  0% {
+    transform: translate(0, 0);
   }
-  
-  .animate-customAnimation {
-    animation: customAnimation 15s infinite;
+  20% {
+    transform: translate(20px, 0);
   }
+  40% {
+    transform: translate(-20px, -20px);
+  }
+  60% {
+    transform: translate(20px, 0);
+  }
+  80% {
+    transform: translate(-20px, 20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.animate-customAnimation {
+  animation: customAnimation 15s infinite;
+}
