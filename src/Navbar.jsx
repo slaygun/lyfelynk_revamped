@@ -1,6 +1,7 @@
-import { ArrowRight, Heart, Menu, X } from 'lucide-react';
+import { Heart, Menu, X } from 'lucide-react';
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
+import GetStarted from './components/GetStarted';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,17 +45,7 @@ const Navbar = () => {
               {links[key]}
             </Link>
           ))}
-          <a 
-            href="https://daqqe-siaaa-aaaag-ak44a-cai.icp0.io"
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="bg-blue-500 text-white hover:bg-blue-700 hover:text-gray-800 rounded-full px-6 py-2 transition duration-500 ease-in-out group"
-          >
-            <span className="flex items-center font-medium font-prompt">
-              Get Started
-              <ArrowRight className="w-4 h-6 ml-2 transform transition-transform duration-500 ease-in-out group-hover:translate-x-2"/>
-            </span>
-          </a>
+          <GetStarted/>
         </div>
         <div className="md:hidden">
           {isOpen ? (
@@ -80,17 +71,7 @@ const Navbar = () => {
             {links[key]}
           </Link>
         ))}
-        <a 
-          href="https://daqqe-siaaa-aaaag-ak44a-cai.icp0.io"
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="block bg-blue-500 text-white hover:bg-blue-700 hover:text-gray-800 rounded-full px-6 py-2 transition duration-500 ease-in-out group my-2"
-        >
-          <span className="flex items-center justify-center font-medium font-prompt">
-            Get Started
-            <ArrowRight className="w-4 h-6 ml-2 transform transition-transform duration-500 ease-in-out group-hover:translate-x-2"/>
-          </span>
-        </a>
+        <GetStarted/>
       </div>
       
       {/* Blob */}
