@@ -15,9 +15,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed p-4 w-full z-20 top-0 space-y-2">
-      <div className="circlePosition w-11/12 h-11/12 bg-[#367ed142] rounded-[100%] absolute -z-10 blur-[100px] flex justify-center items-center">
-        <div className="circle w-[17rem] h-[17rem] bg-[#5743ee42] rounded-[100%]" />
+    <nav className="fixed p-4 w-full z-50 top-0 space-y-2">
+      <div className="w-full h-full fixed inset-0 pointer-events-none -z-10">
+        <div className="circlePosition w-11/12 h-11/12 bg-[#367ed142] rounded-[100%] absolute -z-10 blur-[100px] flex justify-center items-center">
+          <div className="circle w-[17rem] h-[17rem] bg-[#5743ee42] rounded-[100%]" />
+        </div>
       </div>
 
       <div className="px-6 py-4 container mx-auto flex justify-between items-center rounded-2xl border border-gray-700 shadow-lg backdrop-blur-md">
@@ -41,8 +43,8 @@ const Navbar = () => {
             </Link>
           ))}
           <div className='flex space-x-6'>
-            <FaqButton/>
-            <GetStarted/>
+            <FaqButton />
+            <GetStarted />
           </div>
         </div>
         <div className="md:hidden">
@@ -69,7 +71,7 @@ const Navbar = () => {
             {links[key]}
           </Link>
         ))}
-        <FaqButton/>
+        <FaqButton />
         <GetStarted />
       </div>
     </nav>

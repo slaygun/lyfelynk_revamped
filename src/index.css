@@ -14,6 +14,22 @@
 }
 
 
+/* .pink__gradient {
+  background: linear-gradient(90deg, #6a26c4 0%, #3f58aa 100%);
+  filter: blur(100px);
+} */
+/* <div className='absolute -z-[2] left-0 bottom-0 w-[100%] h-[50%] rounded-full pink__gradient'/> */
+
+.trapezoid {
+  border-bottom: 20px solid; /* Example color, use Tailwind color if preferred */
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 23.3rem;
+  position: relative;
+  overflow: hidden;
+}
+
 @layer base {
   body {
     @apply font-poppins;

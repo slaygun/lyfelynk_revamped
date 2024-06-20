@@ -6,12 +6,12 @@ import ShinyBadgeButton from '../components/ShinyBadge';
 
 const Hero = () => {
   return (
-    <section className="py-6 md:py-12 px-6 mt-32 md:mt-36">
+    <section className="z-10 py-6 md:py-12 px-6 mt-32 md:mt-36">
       <div className="container mx-auto flex flex-col md:flex-row items-center">
         <div className="flex flex-col items-center md:items-start md:w-1/2">
           <h1 className="font-space-grotesk text-6xl md:text-8xl font-bold text-center md:text-left">
             Digitally<br/>
-            <span className="bg-gradient-to-bl from-orange-500 via-indigo-500 to-sky-500 text-transparent bg-clip-text">
+            <span className="bg-gradient-to-bl from-pink-500 via-indigo-500 to-sky-500 text-transparent bg-clip-text">
               Linking
             </span>
             <br /> your Health.
