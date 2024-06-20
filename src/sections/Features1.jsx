@@ -32,27 +32,39 @@ const Features1 = () => {
         <div className="md:w-2/3">
           <div className='md:px-12 grid grid-cols-1 gap-6'>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {features.slice(0, 2).map((feature, index) => (
-                <div key={index} className="relative">
-                  <div
-                    className={`absolute -inset-2 rounded-lg ${colors[index % colors.length]} opacity-60 blur-3xl`}
-                  ></div>
-                  <div
-                    className={`relative p-12 ${colors[index % colors.length]} text-black rounded-lg transform transition-transform border border-zinc-700 flex flex-col`}
-                  >
-                    <h2 className="font-prompt text-3xl font-bold py-2">{feature.heading}</h2>
-                    
-                    <p className="mt-4 font-space text-base">{feature.text}</p>
-                  </div>
+              <div className="relative">
+                <div
+                  className={`absolute -inset-2 rounded-lg ${colors[0]} opacity-60 blur-3xl`}
+                ></div>
+                <div
+                  className={`relative p-12 ${colors[0]} text-black rounded-lg transform transition-transform border border-zinc-700 flex flex-col`}
+                >
+                  <h2 className="font-prompt text-3xl font-bold py-2">{features[0].heading}</h2>
+                  
+                  <p className="mt-4 font-space text-base">{features[0].text}</p>
+                  
+                  <img src='assets/heartiso.png' alt="heart icon" className='w-32 h-32 absolute -left-14 -top-14' />
                 </div>
-              ))}
+              </div>
+              <div className="relative">
+                <div
+                  className={`absolute -inset-2 rounded-lg ${colors[1]} opacity-60 blur-3xl`}
+                ></div>
+                <div
+                  className={`relative p-12 ${colors[1]} text-black rounded-lg transform transition-transform border border-zinc-700 flex flex-col`}
+                >
+                  <h2 className="font-prompt text-3xl font-bold py-2">{features[1].heading}</h2>
+                  
+                  <p className="mt-4 font-space text-base">{features[1].text}</p>
+                </div>
+              </div>
             </div>
             <div className="relative">
               <div
-                className={`absolute -inset-2 rounded-lg ${colors[2 % colors.length]} opacity-60 blur-3xl`}
+                className={`absolute -inset-2 rounded-lg ${colors[2]} opacity-60 blur-3xl`}
               ></div>
               <div
-                className={`relative py-6 px-12 ${colors[2 % colors.length]} text-black rounded-lg transform transition-transform border border-zinc-700 flex flex-col`}
+                className={`relative py-6 px-12 ${colors[2]} text-black rounded-lg transform transition-transform border border-zinc-700 flex flex-col`}
               >
                 <h2 className="font-prompt text-3xl font-bold py-2">{features[2].heading}</h2>
                 
