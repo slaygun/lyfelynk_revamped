@@ -1,6 +1,6 @@
 import { Heart, Menu, X } from 'lucide-react';
 import React, { useState } from 'react';
-import { Link } from 'react-scroll';
+import { Link, animateScroll as scroll } from 'react-scroll';
 import GetStarted from './components/GetStarted';
 import FaqButton from './components/FaqButton';
 
@@ -14,6 +14,10 @@ const Navbar = () => {
     contact: 'Contact Us',
   };
 
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <nav className="fixed p-4 w-full z-50 top-0 space-y-2">
       <div className="w-full h-full fixed inset-0 pointer-events-none -z-10">
@@ -23,7 +27,7 @@ const Navbar = () => {
       </div>
 
       <div className="px-6 py-4 container mx-auto flex justify-between items-center rounded-2xl border border-gray-700 shadow-lg backdrop-blur-md">
-        <button className="flex items-center space-x-2 cursor-pointer">
+        <button className="flex items-center space-x-2 cursor-pointer" onClick={scrollToTop}>
           <Heart className="text-blue-600 w-8 h-8" />
           <span className="font-bold text-3xl font-prompt">LyfeLynk</span>
         </button>
