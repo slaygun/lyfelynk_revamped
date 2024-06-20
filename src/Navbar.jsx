@@ -31,7 +31,7 @@ const Navbar = () => {
           <Heart className="text-blue-600 w-8 h-8" />
           <span className="font-bold text-3xl font-prompt">LyfeLynk</span>
         </button>
-        <div className="hidden md:flex space-x-8 items-center">
+        <div className="hidden lg:flex space-x-8 items-center">
           {Object.keys(links).map((key) => (
             <Link
               key={key}
@@ -51,7 +51,7 @@ const Navbar = () => {
             <GetStarted />
           </div>
         </div>
-        <div className="md:hidden">
+        <div className="lg:hidden">
           {isOpen ? (
             <X className="w-8 h-8 text-blue-600 border-2 border-blue-600 rounded-lg px-1 cursor-pointer" onClick={() => setIsOpen(!isOpen)} />
           ) : (
@@ -59,7 +59,7 @@ const Navbar = () => {
           )}
         </div>
       </div>
-      <div className={`md:hidden px-6 py-4 border border-gray-700 backdrop-blur-xl rounded-2xl transition-all duration-500 ease-in-out ${isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+      <div className={`lg:hidden px-6 py-4 border border-gray-700 backdrop-blur-xl rounded-2xl transition-all duration-500 ease-in-out ${isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
         {Object.keys(links).map((key) => (
           <Link
             key={key}
