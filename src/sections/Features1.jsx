@@ -37,13 +37,13 @@ const Features1 = () => {
                   className={`absolute -inset-2 rounded-lg ${colors[0]} opacity-60 blur-3xl`}
                 ></div>
                 <div
-                  className={`relative p-12 ${colors[0]} text-black rounded-lg transform transition-transform border border-zinc-700 flex flex-col`}
+                  className={`relative p-12 ${colors[0]} text-black hover:scale-105  rounded-lg transform transition-transform flex flex-col duration-500 ease-in-out`}
                 >
                   <h2 className="font-prompt text-3xl font-bold py-2">{features[0].heading}</h2>
                   
                   <p className="mt-4 font-space text-base">{features[0].text}</p>
-                  
-                  <img src='assets/heartiso.png' alt="heart icon" className='w-32 h-32 absolute -left-14 -top-14' />
+
+                  <img src='assets/heartiso.png' alt="heart icon" className='w-32 h-32 absolute -left-8 -top-10 md:-left-14 md:-top-14' />
                 </div>
               </div>
               <div className="relative">
@@ -51,7 +51,7 @@ const Features1 = () => {
                   className={`absolute -inset-2 rounded-lg ${colors[1]} opacity-60 blur-3xl`}
                 ></div>
                 <div
-                  className={`relative p-12 ${colors[1]} text-black rounded-lg transform transition-transform border border-zinc-700 flex flex-col`}
+                  className={`relative p-12 ${colors[1]} text-black hover:scale-105  rounded-lg transform transition-transform flex flex-col duration-500 ease-in-out`}
                 >
                   <h2 className="font-prompt text-3xl font-bold py-2">{features[1].heading}</h2>
                   
@@ -64,7 +64,7 @@ const Features1 = () => {
                 className={`absolute -inset-2 rounded-lg ${colors[2]} opacity-60 blur-3xl`}
               ></div>
               <div
-                className={`relative py-6 px-12 ${colors[2]} text-black rounded-lg transform transition-transform border border-zinc-700 flex flex-col`}
+                className={`relative py-6 px-12 ${colors[2]} text-black hover:scale-105  rounded-lg transform transition-transform flex flex-col duration-500 ease-in-out`}
               >
                 <h2 className="font-prompt text-3xl font-bold py-2">{features[2].heading}</h2>
                 
