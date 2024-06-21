@@ -11,7 +11,8 @@ export default {
         'space-grotesk': ['Space Grotesk', 'sans-serif'],
         'roboto-mono': ['Roboto Mono', 'monospace'],
         poppins: ['Poppins', 'sans-serif'],
-      },
+        inter: ['Inter', 'sans-serif']
+      }, 
     },
   },
   plugins: [],

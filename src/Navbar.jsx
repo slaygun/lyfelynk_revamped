@@ -41,7 +41,7 @@ const Navbar = () => {
               smooth={true}
               offset={-70}
               duration={500}
-              className="text-gray-200 hover:text-white font-black text-sm hover:underline cursor-pointer"
+              className="text-gray-200 hover:text-white font-bold text-sm hover:underline cursor-pointer"
             >
               {links[key]}
             </Link>
@@ -69,7 +69,7 @@ const Navbar = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            className="block text-center text-white hover:text-blue-600 font-black text-sm hover:underline cursor-pointer py-2"
+            className="block text-center text-white hover:text-blue-600 font-bold text-sm hover:underline cursor-pointer py-2"
             onClick={() => setIsOpen(false)}
           >
             {links[key]}

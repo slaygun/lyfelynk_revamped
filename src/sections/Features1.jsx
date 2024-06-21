@@ -25,7 +25,7 @@ const Features1 = () => {
   return (
     <section id="features" className="pt-6 pb-12 md:pt-12 md:pb-24 px-6">
       <div className="relative container mx-auto flex flex-col lg:flex-row items-center">
-      <div className='absolute -z-[2] -left-2  w-[25%] h-[100%] rounded-full bluish__gradient'/>
+        <div className='absolute -z-[2] -left-2  w-[25%] h-[100%] rounded-full bluish__gradient'/>
         <div className="lg:w-2/5 p-4">
           <h1 className='font-space-grotesk font-bold text-4xl md:text-8xl '>Your Health, Your Data:</h1>
           <p className='font-prompt font-medium text-2xl md:text-4xl py-2'>Empower Your Health Journey with LyfeLynk</p>
@@ -33,42 +33,21 @@ const Features1 = () => {
         <div className="lg:w-3/5">
           <div className='md:px-12 grid grid-cols-1 gap-6'>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <div className="relative">
-                <div
-                  className={`absolute -inset-2 rounded-lg ${colors[0]} opacity-60 blur-3xl`}
-                ></div>
-                <div
-                  className={`relative p-12 ${colors[0]} text-black hover:scale-105  rounded-lg transform transition-transform flex flex-col duration-500 ease-in-out`}
-                >
-                  <h2 className="font-prompt text-3xl font-bold py-2">{features[0].heading}</h2>
-                  
-                  <p className="mt-4 font-space text-base">{features[0].text}</p>
-
-                  <img src='assets/heartiso.png' alt="heart icon" className='w-32 h-32 absolute -left-8 -top-10 md:-left-14 md:-top-14' />
+              {features.slice(0, 2).map((feature, index) => (
+                <div className="relative" key={index}>
+                  <div className={`absolute -inset-2 rounded-lg ${colors[index]} opacity-60 blur-3xl`}></div>
+                  <div className={`relative w-full h-full p-12 ${colors[index]} text-black hover:scale-105 rounded-lg transform transition-transform flex flex-col duration-500 ease-in-out`}>
+                    <h2 className="font-prompt text-3xl font-bold py-2">{feature.heading}</h2>
+                    <p className="mt-4 font-space text-base">{feature.text}</p>
+                    {index === 0 && <img src='assets/heartiso.png' alt="heart icon" className='w-32 h-32 absolute -left-8 -top-10 md:-left-14 md:-top-14' />}
+                  </div>
                 </div>
-              </div>
-              <div className="relative">
-                <div
-                  className={`absolute -inset-2 rounded-lg ${colors[1]} opacity-60 blur-3xl`}
-                ></div>
-                <div
-                  className={`relative p-12 ${colors[1]} text-black hover:scale-105  rounded-lg transform transition-transform flex flex-col duration-500 ease-in-out`}
-                >
-                  <h2 className="font-prompt text-3xl font-bold py-2">{features[1].heading}</h2>
-                  
-                  <p className="mt-4 font-space text-base">{features[1].text}</p>
-                </div>
-              </div>
+              ))}
             </div>
             <div className="relative">
-              <div
-                className={`absolute -inset-2 rounded-lg ${colors[2]} opacity-60 blur-3xl`}
-              ></div>
-              <div
-                className={`relative py-6 px-12 ${colors[2]} text-black hover:scale-105  rounded-lg transform transition-transform flex flex-col duration-500 ease-in-out`}
-              >
+              <div className={`absolute -inset-2 rounded-lg ${colors[2]} opacity-60 blur-3xl`}></div>
+              <div className={`relative w-full h-full p-12 ${colors[2]} text-black hover:scale-105 rounded-lg transform transition-transform flex flex-col duration-500 ease-in-out`}>
                 <h2 className="font-prompt text-3xl font-bold py-2">{features[2].heading}</h2>
-                
                 <p className="mt-4 font-space text-base">{features[2].text}</p>
               </div>
             </div>
