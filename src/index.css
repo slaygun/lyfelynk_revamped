@@ -19,15 +19,11 @@
   filter: blur(200px);
 }
 
-.trapezoid {
-  border-bottom: 20px solid; /* Example color, use Tailwind color if preferred */
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  height: 0;
-  width: 23.3rem;
-  position: relative;
-  overflow: hidden;
+.shadow__gradient {
+  background: linear-gradient(90deg, #57515f 0%, #5b5d61 100%);
+  filter: blur(60px);
 }
+
 
 @layer base {
   body {
