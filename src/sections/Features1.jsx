@@ -27,7 +27,7 @@ const Features1 = () => {
       <div className="relative container mx-auto flex flex-col lg:flex-row items-center">
         <div className='absolute -z-[2] -left-2  w-[25%] h-[100%] rounded-full bluish__gradient'/>
         <div className="lg:w-1/3">
-          <h1 className='font-space-grotesk font-bold text-4xl md:text-8xl '>Your Health, Your Data:</h1>
+          <h1 className='font-space-grotesk font-bold text-4xl md:text-6xl lg:text-8xl '>Your Health, Your Data:</h1>
           <p className='font-prompt font-medium text-2xl md:text-4xl py-2'>Our Care, Your Confidence</p>
         </div>
         <div className="lg:w-2/3">
@@ -38,7 +38,7 @@ const Features1 = () => {
                   <div className={`absolute -inset-2 rounded-lg ${colors[index]} opacity-60 blur-3xl`}></div>
                   <div className={`relative overflow-hidden w-full h-full p-12 ${colors[index]} text-black hover:scale-105 rounded-lg transform transition-transform flex flex-col duration-500 ease-in-out`}>
                     <h2 className="font-prompt text-3xl font-bold py-2">{feature.heading}</h2>
-                    <p className="pt-4 pb-24 font-space text-base">{feature.text}</p>
+                    <p className="pt-4 pb-24 font-space text-gray-800">{feature.text}</p>
                     {index === 0 && 
                     <img src='assets/heartiso.png' alt='Heart Icon' className='absolute w-80 -bottom-32 -right-16' />
                     }
@@ -54,7 +54,7 @@ const Features1 = () => {
               <div className={`absolute -inset-2 rounded-lg ${colors[2]} opacity-60 blur-3xl`}></div>
               <div className={`relative overflow-hidden w-full h-full p-12 ${colors[2]} text-black hover:scale-105 rounded-lg transform transition-transform flex flex-col duration-500 ease-in-out`}>
                 <h2 className="font-prompt text-3xl font-bold py-2">{features[2].heading}</h2>
-                <p className="pt-4 pb-24 font-space text-base">{features[2].text}</p>
+                <p className="pt-4 pb-24 font-space text-gray-800">{features[2].text}</p>
                 <img src='assets/lockiso.png' alt='Heart Icon' className='absolute w-80 -bottom-32 -right-16' />
                 <div className='absolute -z-[2] -right-2 -bottom-6  w-60 h-44 rounded-full shadow__gradient'/>
               </div>
