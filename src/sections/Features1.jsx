@@ -26,9 +26,9 @@ const Features1 = () => {
     <section id="features" className="pt-6 pb-12 md:pt-12 md:pb-24 px-6">
       <div className="relative container mx-auto flex flex-col lg:flex-row items-center">
         <div className='absolute -z-[2] -left-2  w-[25%] h-[100%] rounded-full bluish__gradient'/>
-        <div className="lg:w-1/3">
-          <h1 className='font-space-grotesk font-bold text-4xl md:text-6xl lg:text-8xl '>Your Health, Your Data:</h1>
-          <p className='font-prompt font-medium text-2xl md:text-4xl py-2'>Our Care, Your Confidence</p>
+        <div className="lg:w-2/5">
+          <h1 className='font-prompt font-medium text-3xl md:text-6xl lg:text-7xl '>Your Health, Your Data:</h1>
+          <p className='font-medium text-2xl md:text-4xl py-2'>Our Care, Your Confidence</p>
         </div>
         <div className="lg:w-2/3">
           <div className='md:px-12 grid grid-cols-1 gap-6'>
