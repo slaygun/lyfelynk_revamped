@@ -1,6 +1,8 @@
 import React from 'react';
 import ShinyBadgeButton from '../components/ShinyBadge';
 import SharingData from '../components/SharingData';
+import AnalyzingData from '../components/AnalyzingData';
+import SecuredData from '../components/SecuredData';
 
 const cardData = [
   {
@@ -32,7 +34,7 @@ const cardData = [
     image: '/assets/bento/rewardsiso.png',
   },
   {
-    badge: '',
+    badge: 'CLEARITY',
     badgeColor: 'bg-sky-400',
     title: 'No secrets here.',
     description: "Track how your data is used, understand its impact, and retain full control over every aspect of the process. LyfeLynk prioritizes transparency so you're always informed and in charge.",
@@ -58,7 +60,7 @@ const Features2 = () => {
                   <img src={cardData[0].image} alt="impact" className='w-96' />
                 </div>
               </div>
-              <div className='pb-6 text-left'>
+              <div className='p-6 text-left'>
                 <h1 className='py-6 text-2xl lg:text-4xl font-prompt font-medium'>{cardData[0].title}</h1>
                 <p className='text-sm lg:text-base text-gray-500'>{cardData[0].description}</p>
               </div>
@@ -68,12 +70,16 @@ const Features2 = () => {
               {cardData.slice(1, 3).map((card, index) => (
                 <div key={index} className="lg:flex p-6 gap-6 h-1/2 border border-gray-700 rounded-3xl mb-4">
                   <div className="lg:w-2/5 relative text-left bg-cover bg-center" style={{ backgroundImage: "url('/assets/grid.png')" }}>
+                    {index === 0 && 
+                      <AnalyzingData className='absolute bottom-6 -right-6' />}
+                    {index === 1 && 
+                      <SecuredData className='absolute bottom-6 -left-10' />}
                     <button className={`${card.badgeColor} py-1 px-2 rounded-lg text-sm font-mono`}>{card.badge}</button>
                     <div className='flex justify-center items-center'>
                       <img src={card.image} alt="impact" className='w-64' />
                     </div>
                   </div>
-                  <div className="lg:w-3/5 text-left pb-6">
+                  <div className="lg:w-3/5 text-left p-6">
                     <h1 className='py-6 text-2xl lg:text-4xl font-prompt font-medium'>{card.title}</h1>
                     <p className='text-sm lg:text-base text-gray-500'>{card.description}</p>
                   </div>
@@ -86,13 +92,13 @@ const Features2 = () => {
           <div className="lg:flex py-0 lg:py-4">
             <div className="lg:w-3/5 lg:flex border border-gray-700 rounded-3xl mb-4 lg:mb-0 lg:mr-8">
               <div className="lg:flex gap-6 p-6 h-1/2">
-                <div className="lg:w-2/5 relative text-left bg-cover bg-center" style={{ backgroundImage: "url('/assets/grid.png')" }}>
+                <div className="lg:w-2/5 relative text-left" style={{ backgroundImage: "url('/assets/grid.png')" }}>
                   <button className={`${cardData[3].badgeColor} py-1 px-2 rounded-lg text-sm font-mono`}>{cardData[3].badge}</button>
                   <div className='flex justify-center items-center'>
                     <img src={cardData[3].image} alt="impact" className='w-64' />
                   </div>
                 </div>
-                <div className="lg:w-3/5 text-left pb-6">
+                <div className="lg:w-3/5 text-left p-6">
                   <h1 className='py-6 text-2xl lg:text-4xl font-prompt font-medium'>{cardData[3].title}</h1>
                   <p className='text-sm lg:text-base text-gray-500'>{cardData[3].description}</p>
                 </div>
@@ -102,9 +108,9 @@ const Features2 = () => {
             <div className="relative lg:w-2/5 border border-gray-700 rounded-3xl mb-4 lg:mb-0">
               <div className='p-6 text-left bg-cover bg-center' style={{ backgroundImage: "url('/assets/grid.png')" }}>
                 {cardData[4].badge && (
-                  <button className={`${cardData[4].badgeColor} py-1 px-2 rounded-lg text-sm font-mono`}>{cardData[4].badge}</button>
+                  <button className={`${cardData[4].badgeColor} absolute py-1 px-2 rounded-lg text-sm font-mono`}>{cardData[4].badge}</button>
                 )}
-                <div className="text-left pb-6">
+                <div className="text-left p-6">
                   <h1 className='py-6 text-2xl lg:text-4xl font-prompt font-medium'>{cardData[4].title}</h1>
                   <p className='text-sm lg:text-base text-gray-500'>{cardData[4].description}</p>
                 </div>
