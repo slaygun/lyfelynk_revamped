@@ -107,7 +107,11 @@ const Features2 = () => {
 
             <div className="relative lg:w-2/5 border border-gray-700 rounded-3xl mb-4 lg:mb-0">
               <div className='p-6 text-left bg-cover bg-center' style={{ backgroundImage: "url('/assets/grid.png')" }}>
-                {/* <img src='/assets/glassheart.png' alt='heart in glass' className='absolute md:w-48 lg:w-60 -bottom-24 -right-12 lg:-bottom-24 lg:-right-24'/> */}
+                <img 
+                  src='/assets/glassheart.png' 
+                  alt='heart in glass' 
+                  className='absolute w-32 md:w-48 lg:w-60 -bottom-12 sm:-bottom-16 md:-bottom-24 -right-6 sm:-right-8 md:-right-12 lg:-bottom-24 lg:-right-24'
+                />
                 {cardData[4].badge && (
                   <button className={`${cardData[4].badgeColor} absolute py-1 px-2 rounded-lg text-sm font-mono`}>{cardData[4].badge}</button>
                 )}
