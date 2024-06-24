@@ -33,17 +33,40 @@
   display: inline-block;
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
-  }
+}
 
-  @keyframes rotation {
+@keyframes rotation {
   0% {
       transform: rotate(0deg);
   }
   100% {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
-  } 
+}
 
+@keyframes complex-levitate {
+  0% {
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+  25% {
+    transform: translateY(-10px) rotate(-2deg) scale(1.02);
+  }
+  50% {
+    transform: translateY(-20px) rotate(0deg) scale(1.05);
+  }
+  75% {
+    transform: translateY(-10px) rotate(2deg) scale(1.02);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+}
+
+.animate-levitate {
+  animation: complex-levitate 5s ease-in-out infinite;
+}
+
+  
 @layer base {
   body {
     @apply font-inter;

@@ -44,7 +44,7 @@ const cardData = [
 const Features2 = () => {
   return (
     <section className='py-12 md:py-24 px-6'>
-      <div className='container mx-auto text-center lg:px-24'>
+      <div className='container mx-auto text-center sm:px-24'>
         <ShinyBadgeButton text="Advanced Health Solutions" />
         <h2 className='pt-6 pb-12 font-space-grotesk font-medium text-3xl md:text-5xl'>
           Ethical Data Sourcing and DeAI Analytics
@@ -110,7 +110,7 @@ const Features2 = () => {
                 <img 
                   src='/assets/glassheart.png' 
                   alt='heart in glass' 
-                  className='absolute w-32 md:w-48 lg:w-60 -bottom-12 sm:-bottom-16 md:-bottom-24 -right-6 sm:-right-8 md:-right-12 lg:-bottom-24 lg:-right-24'
+                  className='animate-levitate absolute w-32 md:w-48 lg:w-60 -bottom-12 sm:-bottom-16 md:-bottom-24 -right-6 sm:-right-8 md:-right-12 lg:-bottom-24 lg:-right-24'
                 />
                 {cardData[4].badge && (
                   <button className={`${cardData[4].badgeColor} absolute py-1 px-2 rounded-lg text-sm font-mono`}>{cardData[4].badge}</button>
