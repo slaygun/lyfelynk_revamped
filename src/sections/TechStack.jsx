@@ -19,7 +19,7 @@ const TechStack = () => {
   const tabContent = [
     (
       <div>
-        <ShinyBadgeButton className=" bg-gray-800" text="Internet Computer (Dfinity)" />
+        <ShinyBadgeButton className=" bg-gray-800" text="Internet Computer" />
         <h1 className="text-lg md:text-2xl font-bold text-white py-4">
           Built on the Blockchain for Unmatched Security & Scalability
         </h1>
@@ -106,6 +106,6 @@ const TechStack = () => {
       </div>
     </section>
   );
-};
+}
 
 export default TechStack;

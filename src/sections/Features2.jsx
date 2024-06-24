@@ -1,8 +1,8 @@
 import React from 'react';
-import ShinyBadgeButton from '../components/ShinyBadge';
 import SharingData from '../components/SharingData';
 import AnalyzingData from '../components/AnalyzingData';
 import SecuredData from '../components/SecuredData';
+import ShinyBadgeButton from '../components/ShinyBadge';
 
 const cardData = [
   {
@@ -110,7 +110,7 @@ const Features2 = () => {
                 <img 
                   src='/assets/glassheart.png' 
                   alt='heart in glass' 
-                  className='animate-levitate absolute w-32 md:w-48 lg:w-60 -bottom-12 sm:-bottom-16 md:-bottom-24 -right-6 sm:-right-8 md:-right-12 lg:-bottom-24 lg:-right-24'
+                  className='animate-levitate absolute w-32 md:w-48 lg:w-60 -bottom-14 sm:-bottom-16 md:-bottom-24 -right-4 sm:-right-8 md:-right-12 lg:-bottom-24 lg:-right-24'
                 />
                 {cardData[4].badge && (
                   <button className={`${cardData[4].badgeColor} absolute py-1 px-2 rounded-lg text-sm font-mono`}>{cardData[4].badge}</button>
