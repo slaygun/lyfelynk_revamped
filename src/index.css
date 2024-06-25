@@ -15,8 +15,16 @@
 
 
 .bluish__gradient {
-  background: linear-gradient(90deg, #4d00b1 0%, #0231cc 100%);
+  background: linear-gradient(90deg, #4d00b1 0%, #3422ce 100%);
   filter: blur(300px);
+}
+
+.cta__gradient {
+  
+background: rgb(2,0,36);
+background: radial-gradient(circle, rgb(10, 6, 78) 0%, rgba(79,168,208,1) 75%);
+filter: blur(60px);
+
 }
 
 .shadow__gradient {
