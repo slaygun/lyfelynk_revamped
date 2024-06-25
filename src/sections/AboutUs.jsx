@@ -1,3 +1,4 @@
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -7,40 +8,35 @@ const teamData = [
     name: "Sivia Goyal",
     designation: "CEO",
     avatar: "assets/team/ceo.jpeg",
-    content:
-      "Civil engineer, MBA, and Edtech entrepreneur (1K to 100K+ users). Combines tech and healthcare experience (Infosys, Dr. Reddy Labs) with a passion for blockchain-driven innovation.",
+    content: "Civil engineer, MBA, and Edtech entrepreneur (1K to 100K+ users). Combines tech and healthcare experience (Infosys, Dr. Reddy Labs) with a passion for blockchain-driven innovation.",
     link: "https://www.linkedin.com/in/sivia-goyal-5447a919/"
   },
   {
     name: "Aaditya Chandankar",
     designation: "CTO",
     avatar: "assets/team/cto.jpeg",
-    content:
-      "Mechanical engineer, Web3 specialist, proven blockchain developer (Ethereum, Avalanche, Polygon, ICP). Health tech research experience. Passionate about decentralized healthcare solutions.",
+    content: "Mechanical engineer, Web3 specialist, proven blockchain developer (Ethereum, Avalanche, Polygon, ICP). Health tech research experience. Passionate about decentralized healthcare solutions.",
     link: "https://www.linkedin.com/in/sirilux/"
   },
   {
     name: "Mann Acharya",
     designation: "Technical Project Manager",
     avatar: "assets/team/pm.jpeg",
-    content:
-      "A Google Certified AI Engineer, with a focus on creating scalable infrastructure, good development practices and talent management. Drives innovation and efficiency in product development processes.",
+    content: "A Google Certified AI Engineer, with a focus on creating scalable infrastructure, good development practices and talent management. Drives innovation and efficiency in product development processes.",
     link: "https://www.linkedin.com/in/mann-acharya/"
   },
   {
     name: "Nabh Raghav",
     designation: "Frontend Developer",
     avatar: "assets/team/designer.jpeg",
-    content:
-      "Frontend Expert, UI/UX Specialist excelling in crafting visually captivating designs, dedicated to elevating user experiences through innovation, precision and creativity.",
+    content: "Frontend Expert, UI/UX Specialist excelling in crafting visually captivating designs, dedicated to elevating user experiences through innovation, precision and creativity.",
     link: "https://www.linkedin.com/in/nabh-raghav-69420/"
   },
   {
     name: "Harshvardhan Singh",
     designation: "AI & ML Engineer",
     avatar: "assets/team/aiml.jpeg",
-    content:
-      "AI & ML Head. Data Science Specialist excelling in leveraging advanced technologies. Drives innovation, analytics, and insightful solutions for enhanced data-driven decision-making.",
+    content: "AI & ML Head. Data Science Specialist excelling in leveraging advanced technologies. Drives innovation, analytics, and insightful solutions for enhanced data-driven decision-making.",
     link: "https://www.linkedin.com/in/harshvardhan-singh-a94231241/"
   }
   // Add more team members here
@@ -65,6 +61,26 @@ const responsive = {
   }
 };
 
+const CustomLeftArrow = ({ onClick }) => (
+  <button
+    onClick={onClick}
+    className="absolute left-1 z-40 flex items-center justify-center w-10 h-10 -mt-5 transition duration-300 ease-in-out bg-gray-800 rounded-full shadow-lg hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-600"
+    style={{ top: "50%", transform: "translateY(-50%)" }}
+  >
+    <ChevronLeft/>
+  </button>
+);
+
+const CustomRightArrow = ({ onClick }) => (
+  <button
+    onClick={onClick}
+    className="absolute right-1 z-40 flex items-center justify-center w-10 h-10 -mt-5 transition duration-300 ease-in-out bg-gray-800 rounded-full shadow-lg hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-600"
+    style={{ top: "50%", transform: "translateY(-50%)" }}
+  >
+    <ChevronRight/>
+  </button>
+);
+
 const AboutUs = () => {
   const handleClick = (link) => {
     window.open(link, '_blank');
@@ -87,6 +103,10 @@ const AboutUs = () => {
           swipeable={true} 
           showIndicators={false}
           containerClass="carousel-container"
+          itemClass="carousel-item-padding-60-px"
+          arrows={true}
+          customLeftArrow={<CustomLeftArrow />}
+          customRightArrow={<CustomRightArrow />}
         >
           {teamData.map((member, index) => (
             <div 

@@ -66,6 +66,10 @@
   animation: complex-levitate 5s ease-in-out infinite;
 }
 
+.carousel-container .react-multi-carousel-arrow {
+  z-index: 30; 
+}
+
   
 @layer base {
   body {

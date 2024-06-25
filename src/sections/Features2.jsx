@@ -46,7 +46,7 @@ const Features2 = () => {
     <section className='py-12 md:py-24 px-6'>
       <div className='container mx-auto text-center sm:px-24'>
         <ShinyBadgeButton text="Advanced Health Solutions" />
-        <h2 className='pt-6 pb-12 font-space-grotesk font-medium text-3xl md:text-5xl'>
+        <h2 className='pt-6 pb-12 font-space-grotek font-bold tracking-tighter text-3xl md:text-5xl'>
           Ethical Data Sourcing and DeAI Analytics
         </h2>
         {/* First Row */}
