@@ -1,9 +1,6 @@
 import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import GetInTouch from "../components/GetInTouch";
-import GetStarted from "../components/GetStarted";
-import ShinyBadgeButton from '../components/ShinyBadge';
 
 const teamData = [
   {
@@ -12,6 +9,7 @@ const teamData = [
     avatar: "assets/team/ceo.jpeg",
     content:
       "Civil engineer, MBA, and Edtech entrepreneur (1K to 100K+ users). Combines tech and healthcare experience (Infosys, Dr. Reddy Labs) with a passion for blockchain-driven innovation.",
+    link: "https://www.linkedin.com/in/sivia-goyal-5447a919/"
   },
   {
     name: "Aaditya Chandankar",
@@ -19,6 +17,7 @@ const teamData = [
     avatar: "assets/team/cto.jpeg",
     content:
       "Mechanical engineer, Web3 specialist, proven blockchain developer (Ethereum, Avalanche, Polygon, ICP). Health tech research experience. Passionate about decentralized healthcare solutions.",
+    link: "https://www.linkedin.com/in/sirilux/"
   },
   {
     name: "Mann Acharya",
@@ -26,6 +25,7 @@ const teamData = [
     avatar: "assets/team/pm.jpeg",
     content:
       "A Google Certified AI Engineer, with a focus on creating scalable infrastructure, good development practices and talent management. Drives innovation and efficiency in product development processes.",
+    link: "https://www.linkedin.com/in/mann-acharya/"
   },
   {
     name: "Nabh Raghav",
@@ -33,6 +33,7 @@ const teamData = [
     avatar: "assets/team/designer.jpeg",
     content:
       "Frontend Expert, UI/UX Specialist excelling in crafting visually captivating designs, dedicated to elevating user experiences through innovation, precision and creativity.",
+    link: "https://www.linkedin.com/in/nabh-raghav-69420/"
   },
   {
     name: "Harshvardhan Singh",
@@ -40,7 +41,8 @@ const teamData = [
     avatar: "assets/team/aiml.jpeg",
     content:
       "AI & ML Head. Data Science Specialist excelling in leveraging advanced technologies. Drives innovation, analytics, and insightful solutions for enhanced data-driven decision-making.",
-  },
+    link: "https://www.linkedin.com/in/harshvardhan-singh-a94231241/"
+  }
   // Add more team members here
 ];
 
@@ -64,6 +66,10 @@ const responsive = {
 };
 
 const AboutUs = () => {
+  const handleClick = (link) => {
+    window.open(link, '_blank');
+  };
+
   return (
     <section id="about" className="py-12 md:py-24 px-6">
       <div className="relative container mx-auto text-center lg:max-w-screen-lg">
@@ -83,7 +89,11 @@ const AboutUs = () => {
           containerClass="carousel-container"
         >
           {teamData.map((member, index) => (
-            <div key={index} className='p-8 w-72 h-96 border border-gray-800 rounded-3xl mx-auto'>
+            <div 
+              key={index} 
+              className='p-8 w-72 h-96 border border-gray-800 rounded-3xl mx-auto transition-transform transform hover:scale-95 hover:shadow-xl cursor-pointer'
+              onClick={() => handleClick(member.link)}
+            >
               <img src={member.avatar} alt={member.name} className='w-24 h-24 rounded-full border-2 mx-auto object-cover' />
               <h1 className='pt-4 font-prompt font-semibold text-lg'>{member.name}</h1>
               <p className='pt-2 font-semibold text-sm text-gray-600'>{member.designation}</p>
