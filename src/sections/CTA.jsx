@@ -13,12 +13,12 @@ const CTA = () => {
             <img 
                 src='/assets/glassheart2.png' 
                 alt='heart in glass' 
-                className='animate-levitate absolute w-32 md:w-48 lg:w-60 -bottom-16 sm:-bottom-16 md:-bottom-24 -right-8 sm:-right-8 md:-right-12 lg:-bottom-24 lg:-right-24'
+                className='animate-levitate absolute w-24 sm:w-32 md:w-48 lg:w-60 -bottom-14 sm:-bottom-16 md:-bottom-24 -right-4 sm:-right-8 md:-right-12 lg:-bottom-24 lg:-right-24'
             />
           <h1 className='font-bold font-space-grotesk tracking-tight text-4xl sm:text-5xl md:text-8xl'>Start your <br/> health journey <br/> today.</h1>
           <div className="pt-6 md:pt-12 flex space-x-4">
-            <GetStarted/>
             <GetInTouch />
+            <GetStarted/>
           </div>
         </div>
       </div>
