@@ -3,7 +3,7 @@
 Revised landing page of [lyfelynk.in](https://lyfelynk.in) with modern ui.
 
 ### How to Run
-1. Clone the repository:
+1. Clone the repository and then-
    ```bash
    cd lyfelynk_revamped
    npm i
