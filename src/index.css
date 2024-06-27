@@ -78,7 +78,7 @@ filter: blur(60px);
   z-index: 30; 
 }
 
-  
+
 @layer base {
   body {
     @apply font-inter;

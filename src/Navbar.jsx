@@ -8,7 +8,6 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const links = {
-    vision: 'Vision',
     features: 'Features',
     about: 'About Us',
     contact: 'Contact Us',
@@ -39,7 +38,7 @@ const Navbar = () => {
               to={key}
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-120}
               duration={500}
               className="text-gray-200 hover:text-white font-bold text-sm hover:underline cursor-pointer"
             >
@@ -67,7 +66,7 @@ const Navbar = () => {
             to={key}
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-120}
             duration={500}
             className="block text-center text-white hover:text-blue-600 font-bold text-sm hover:underline cursor-pointer py-2"
             onClick={() => setIsOpen(false)}

@@ -90,7 +90,7 @@ const AboutUs = () => {
     <section id="about" className="py-12 md:py-24 px-6">
       <div className="relative container mx-auto text-center lg:max-w-screen-lg">
         <div className='absolute bottom-32 -z-[2] w-full h-1/2 rounded-full bluish__gradient' />
-        <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Us</h1>
+        <h1 className="text-3xl font-bold tracking-tighter md:text-5xl">About Us</h1>
         <p className="pt-2 pb-8 mx-auto text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
           The talent that drives LyfeLynk.
         </p>

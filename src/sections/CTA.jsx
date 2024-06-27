@@ -1,7 +1,6 @@
 import React from 'react';
 import GetInTouch from '../components/GetInTouch';
 import GetStarted from '../components/GetStarted';
-import { ArrowRight } from 'lucide-react';
 
 const CTA = () => {
   return (

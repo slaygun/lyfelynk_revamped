@@ -9,6 +9,8 @@ import TechStack from './sections/TechStack';
 import CTA from './sections/CTA';
 import { Contact } from 'lucide-react';
 import ContactUs from './sections/ContactUs';
+import Faqs from './sections/Faqs';
+import Footer from './Footer';
 
 const App = () => {
   return (
@@ -22,6 +24,8 @@ const App = () => {
       <AboutUs/>
       <CTA/>
       <ContactUs/>
+      <Faqs/>
+      <Footer/>
     </div>
   );
 };

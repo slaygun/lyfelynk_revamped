@@ -6,6 +6,7 @@ const FaqButton = () => {
         to="faqs" 
         smooth={true} 
         duration={500}  
+        offset={-120}
         className="block text-center border border-white hover:text-blue-500 hover:border-blue-500 rounded-full px-4 py-2 transition duration-500 ease-in-out group my-2 cursor-pointer"
     >
     <span className="font-medium font-prompt">
