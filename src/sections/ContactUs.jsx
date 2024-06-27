@@ -1,3 +1,4 @@
+import ContactForm from "../components/ContactForm";
 import Socials from "../components/Socials";
 
 export default function ContactUs() {
@@ -12,46 +13,7 @@ export default function ContactUs() {
               </p>
               <Socials/>
             </div>
-            <div className="space-y-4">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <label htmlFor="first-name">First name</label>
-                  <input
-                    id="first-name"
-                    placeholder="Enter your first name"
-                    className="w-full px-3 py-2 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-900"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label htmlFor="last-name">Last name</label>
-                  <input
-                    id="last-name"
-                    placeholder="Enter your last name"
-                    className="w-full px-3 py-2 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-900"
-                  />
-                </div>
-              </div>
-              <div className="space-y-2">
-                <label htmlFor="email">Email</label>
-                <input
-                  id="email"
-                  placeholder="Enter your email"
-                  type="email"
-                  className="w-full px-3 py-2 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-900"
-                />
-              </div>
-              <div className="space-y-2">
-                <label htmlFor="message">Message</label>
-                <textarea
-                  className="w-full px-3 py-2 border border-gray-700 rounded-lg min-h-[100px] focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-900"
-                  id="message"
-                  placeholder="Enter your message"
-                />
-              </div>
-              <button className="px-4 py-2 font-semibold text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                Submit
-              </button>
-            </div>
+            <ContactForm/>
           </div>
         </div>
       </section>
