@@ -9,9 +9,9 @@ const TechStack = () => {
   };
 
   const tabImages = [
-    "/assets/techstack/f4-1.png",
-    "/assets/techstack/f4-2.png",
-    "/assets/techstack/f4-3.png",
+    "/assets/techstack/DFINITY.png",
+    "/assets/techstack/Encryption.png",
+    "/assets/techstack/ABDM.png",
   ];
 
   const tabNames = ["Dfinity", "VETKeys", "ABDM"];
