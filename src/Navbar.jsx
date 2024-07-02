@@ -27,7 +27,7 @@ const Navbar = () => {
 
       <div className="px-6 py-4 container mx-auto flex justify-between items-center rounded-2xl border border-gray-700 shadow-lg backdrop-blur-md">
         <button className="flex items-center space-x-2 cursor-pointer" onClick={scrollToTop}>
-          <Heart className="text-blue-600 w-8 h-8" />
+          <img src="/assets/heartlogo.png" alt="logo" className="w-12"/>
           <span className="font-bold text-3xl font-prompt">LyfeLynk</span>
         </button>
         <div className="hidden lg:flex space-x-8 items-center">

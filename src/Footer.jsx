@@ -17,7 +17,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 justify-center">
         <div>
           <div className="text-xl font-semibold mb-4 flex items-center space-x-2">
-            <Heart className="text-blue-600 w-8 h-8" />
+          <img src="/assets/heartlogo.png" alt="logo" className="w-12"/>
             <span className="font-bold text-3xl font-prompt">LyfeLynk</span>
           </div>
           <p className="text-gray-400">
