@@ -1,4 +1,4 @@
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react';
 import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -111,11 +111,13 @@ const AboutUs = () => {
           {teamData.map((member, index) => (
             <div 
               key={index} 
-              className='p-8 w-72 h-96 border border-gray-800 rounded-3xl mx-auto transition-transform transform hover:scale-95 hover:shadow-xl cursor-pointer'
-              onClick={() => handleClick(member.link)}
+              className='p-8 w-72 h-96 border border-gray-800 rounded-3xl mx-auto hover:shadow-xl'
             >
               <img src={member.avatar} alt={member.name} className='w-24 h-24 rounded-full border-2 mx-auto object-cover' />
-              <h1 className='pt-4 font-prompt font-semibold text-lg'>{member.name}</h1>
+              <div className='pt-4  flex justify-center space-x-2 items-center'>
+                <h1 className='font-prompt font-semibold text-lg'>{member.name}</h1>
+                <ExternalLink onClick={() => handleClick(member.link)} className='w-6 h-6 p-1 bg-blue-500 hover:bg-blue-700 rounded-md cursor-pointer transition duration-500 ease-in-out' />
+              </div>
               <p className='pt-2 font-semibold text-sm text-gray-600'>{member.designation}</p>
               <p className='pt-4 text-sm text-gray-600'>{member.content}</p>
             </div>
