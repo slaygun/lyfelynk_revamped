@@ -3,16 +3,16 @@ import React from 'react';
 const Features1 = () => {
   const features = [
     {
-      heading: "Control Your Health",
-      text: "LyfeLynk puts you in complete control of your health records. No more scattered information or corporate ownership. Manage your health journey with ease.",
+      heading: "Personalized Health Insights",
+      text: "Unlock actionable insights tailored to your unique health profile. Lyfelynk's advanced machine learning models provide data-driven recommendations to help you achieve your health goals and make informed decisions.",
     },
     {
-      heading: "Unified Records",
-      text: "Say goodbye to fragmented medical records. LyfeLynk consolidates all your health data for instant, streamlined access by you and your chosen providers.",
+      heading: "Secure Data Storage",
+      text: "Store and manage your health information with confidence. Lyfelynk's blockchain-based data locker ensures your data is encrypted, private, and only accessible to you and those you choose to share it with.",
     },
     {
-      heading: "Secure Insights",
-      text: "Your health data is protected with advanced blockchain encryption, ensuring privacy and security. Clear explanations provide you with the knowledge to make informed decisions about your wellbeing.",
+      heading: "Engaging Gamification Model",
+      text: "Enhance your health journey with Wellness Avatar NFTs. Earn tokens and rewards by participating in wellness activities and telehealth consultations. Lyfelynk makes staying healthy fun and engaging.",
     },
   ];
 
