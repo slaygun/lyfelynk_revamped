@@ -44,11 +44,11 @@ const cardData = [
 const Features2 = () => {
   return (
     <section className='py-12 md:py-24 px-6'>
-      <div className='container mx-auto text-center sm:px-24'>
+      <div className='container mx-auto text-center'>
         <ShinyBadgeButton text="Advanced Health Solutions" />
-        <h2 className='pt-6 pb-12 font-space-grotek font-bold tracking-tighter text-3xl md:text-5xl'>
+        <h1 className='pt-6 pb-12 font-bold tracking-tighter text-3xl md:text-5xl'>
           Ethical Data Sourcing and DeAI Analytics
-        </h2>
+        </h1>
         {/* First Row */}
         <div>
           <div className="lg:flex">

@@ -9,7 +9,7 @@ const Hero = () => {
     <section className="z-10 py-6 md:py-12 px-6 mt-32 md:mt-36">
       <div className="container mx-auto flex flex-col md:flex-row items-center">
         <div className="flex flex-col items-center md:items-start md:w-1/2">
-          <h1 className="font-space-grotesk text-6xl md:text-8xl font-bold text-center md:text-left">
+          <h1 className="font-space-grotesk tracking-tighter text-6xl md:text-8xl font-bold text-center md:text-left">
             Digitally<br/>
             <span className="bg-gradient-to-bl from-pink-500 via-indigo-500 to-sky-500 text-transparent bg-clip-text">
               Linking
@@ -22,7 +22,7 @@ const Hero = () => {
             <GetStarted />
           </div>
 
-          <p className="py-2 lg:pr-36 font-roboto-mono font-medium md:text-lg text-center md:text-left">
+          <p className="py-2 lg:pr-36 font-mono font-medium md:text-lg text-center md:text-left">
             Access all your health data with a single click and make it work for you.
           </p>
         </div>
