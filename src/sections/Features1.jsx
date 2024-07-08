@@ -33,7 +33,7 @@ const Features1 = () => {
         <div className='lg:flex justify-center lg:space-x-8 max-w-7xl mx-auto '>
           <div className='lg:w-3/5 space-y-6 flex flex-col'>
             {/* first */}
-            <div className={`flex flex-col sm:flex-row border-8 border-gray-900 hover:shadow-xl rounded-3xl p-12 gap-y-6 sm:gap-x-10 items-center flex-1 ${colors[0]} hover:scale-105 transition duration-300 ease-in-out`}>
+            <div className={`flex flex-col sm:flex-row border-4 border-gray-900 hover:shadow-xl rounded-3xl p-12 gap-y-6 sm:gap-x-10 items-center flex-1 ${colors[0]} hover:scale-105 transition duration-300 ease-in-out`}>
               <img
                   src="/assets/f1/insight.png"
                   alt="health insights"
@@ -45,7 +45,7 @@ const Features1 = () => {
               </div>
             </div>
             {/* second */}
-            <div className={`flex flex-col-reverse sm:flex-row border-8 border-gray-900 hover:shadow-xl rounded-3xl p-12 gap-y-6 sm:gap-x-10 items-center flex-1 ${colors[1]} hover:scale-105 transition duration-300 ease-in-out`}>
+            <div className={`flex flex-col-reverse sm:flex-row border-4 border-gray-900 hover:shadow-xl rounded-3xl p-12 gap-y-6 sm:gap-x-10 items-center flex-1 ${colors[1]} hover:scale-105 transition duration-300 ease-in-out`}>
               <div className='text-left'>
                 <h1 className='font-prompt text-black font-medium text-2xl md:text-3xl xl:text-4xl'>{features[1].heading}</h1>
                 <p className='pt-4 text-sm text-zinc-800 font-medium'>{features[1].text}</p>
@@ -58,7 +58,7 @@ const Features1 = () => {
             </div>
           </div>
           {/* third */}
-          <div className={`flex flex-col sm:flex-row lg:flex-col lg:w-2/5 mt-6 lg:mt-0 p-12 gap-y-6 gap-x-12 border-8 border-gray-900 hover:shadow-xl rounded-3xl justify-center items-center ${colors[2]} hover:scale-105 transition duration-300 ease-in-out`}>
+          <div className={`flex flex-col sm:flex-row lg:flex-col lg:w-2/5 mt-6 lg:mt-0 p-12 gap-y-6 gap-x-12 border-4 border-gray-900 hover:shadow-xl rounded-3xl justify-center items-center ${colors[2]} hover:scale-105 transition duration-300 ease-in-out`}>
             <img
               src="/assets/f1/gamify.png"
               alt="gamification"
