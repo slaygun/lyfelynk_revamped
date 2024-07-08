@@ -70,8 +70,25 @@ filter: blur(60px);
   }
 }
 
+@keyframes simple-levitate {
+  0% {
+    transform: translateY(0) ;
+  }
+
+  50% {
+    transform: translateY(-15px) ;
+  }
+  100% {
+    transform: translateY(0) ;
+  }
+
+}
 .animate-levitate {
   animation: complex-levitate 5s ease-in-out infinite;
+}
+
+.animate-levitate2 {
+  animation: simple-levitate 5s ease-in-out infinite;
 }
 
 .carousel-container .react-multi-carousel-arrow {

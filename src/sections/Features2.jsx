@@ -18,14 +18,14 @@ const cardData = [
   },
   {
     badge: 'SECURE',
-    badgeColor: 'bg-teal-400',
+    badgeColor: 'bg-purple-400',
     text: 'Unmatched Security and Privacy',
     description: 'Lyfelynk ensures your data is protected with top-tier blockchain security. Your information is encrypted and private. Accessible only to you and authorized parties. Trust in our robust security measures.',
     image: '/assets/bento/protectioniso.png', 
   },
   {
     badge: 'PRIVATE',
-    badgeColor: 'bg-purple-400',
+    badgeColor: 'bg-teal-400',
     text: 'AI-Powered Data Anonymization',
     description: 'Our AI models automatically remove private information from your documents. Ensure your data can be safely shared and sold. Protect your privacy without compromise. Share data confidently.',
     image: '/assets/bento/privacyiso.png', 
