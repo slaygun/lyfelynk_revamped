@@ -50,7 +50,7 @@ const Features2 = () => {
           Ethical Data Sourcing and DeAI Analytics
         </h1>
         {/* First Row */}
-        <div>
+        <div className='max-w-7xl mx-auto'>
           <div className="lg:flex">
             <div className="lg:w-2/5 px-6 py-6 border border-gray-700 rounded-3xl mb-4 lg:mb-0 lg:mr-8">
               <div className='relative text-left bg-cover bg-center' style={{ backgroundImage: "url('/assets/grid.png')" }}>
