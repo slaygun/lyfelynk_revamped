@@ -30,24 +30,24 @@ const Features1 = () => {
         <h1 className='pt-6 pb-12 font-bold tracking-tighter text-3xl md:text-5xl'>
           Empower Your Health Journey
         </h1>
-        <div className='flex justify-center space-x-8 max-w-7xl mx-auto'>
-          <div className='w-3/5 space-y-6 flex flex-col'>
+        <div className='lg:flex justify-center lg:space-x-8 max-w-7xl mx-auto '>
+          <div className='lg:w-3/5 space-y-6 flex flex-col'>
             {/* first */}
-            <div className={`flex border-8 border-gray-900 hover:shadow-xl rounded-3xl p-12 gap-x-10 items-center flex-1 ${colors[0]} hover:scale-105 transition duration-300 ease-in-out`}>
+            <div className={`flex flex-col sm:flex-row border-8 border-gray-900 hover:shadow-xl rounded-3xl p-12 gap-y-4 sm:gap-x-10 items-center flex-1 ${colors[0]} hover:scale-105 transition duration-300 ease-in-out`}>
               <img
                   src="/assets/f1/gamify.png"
                   alt="gamification"
                   className="w-60"
                 />
               <div className='text-left'>
-                <h1 className='font-prompt text-black font-medium text-2xl lg:text-4xl'>{features[0].heading}</h1>
+                <h1 className='font-prompt text-black font-medium text-2xl md:text-3xl xl:text-4xl'>{features[0].heading}</h1>
                 <p className='pt-4 text-sm text-zinc-800 font-medium'>{features[0].text}</p>
               </div>
             </div>
             {/* second */}
-            <div className={`flex border-8 border-gray-900 hover:shadow-xl rounded-3xl p-12 gap-x-10 items-center flex-1 ${colors[1]} hover:scale-105 transition duration-300 ease-in-out`}>
+            <div className={`flex flex-col-reverse sm:flex-row border-8 border-gray-900 hover:shadow-xl rounded-3xl p-12 gap-y-4 sm:gap-x-10 items-center flex-1 ${colors[1]} hover:scale-105 transition duration-300 ease-in-out`}>
               <div className='text-left'>
-                <h1 className='font-prompt text-black font-medium text-2xl lg:text-4xl'>{features[1].heading}</h1>
+                <h1 className='font-prompt text-black font-medium text-2xl md:text-3xl xl:text-4xl'>{features[1].heading}</h1>
                 <p className='pt-4 text-sm text-zinc-800 font-medium'>{features[1].text}</p>
               </div>
               <img
@@ -58,14 +58,14 @@ const Features1 = () => {
             </div>
           </div>
           {/* third */}
-          <div className={`w-2/5 border-8 border-gray-900 hover:shadow-xl rounded-3xl flex flex-col flex-1 justify-center ${colors[2]} hover:scale-105 transition duration-300 ease-in-out`}>
+          <div className={`flex flex-col sm:flex-row lg:flex-col lg:w-2/5 mt-6 xl:mt-0 p-12 gap-y-4 gap-x-12 border-8 border-gray-900 hover:shadow-xl rounded-3xl justify-center items-center ${colors[2]} hover:scale-105 transition duration-300 ease-in-out`}>
             <img
               src="/assets/f1/gamify.png"
               alt="gamification"
-              className="mx-auto pt-12 w-96"
+              className="w-60 lg:w-96 pb-0 lg:pb-12"
             />
-            <div className='p-12 text-left flex-grow'>
-              <h1 className='font-prompt text-black font-medium text-2xl lg:text-4xl'>{features[2].heading}</h1>
+            <div className='text-left flex-grow'>
+              <h1 className='font-prompt text-black font-medium text-2xl md:text-3xl xl:text-4xl'>{features[2].heading}</h1>
               <p className='pt-4 text-sm text-gray-900 font-medium'>{features[2].text}</p>
             </div>
           </div>
