@@ -28,7 +28,7 @@ const Features1 = () => {
       <div className="container mx-auto text-center">
         {/* <ShinyBadgeButton text="Lorem Ipsum Sum" /> */}
         <h1 className='pt-6 pb-12 font-bold tracking-tighter text-3xl md:text-5xl'>
-          Empower Your Health Journey
+          Personalized Health Solutions
         </h1>
         <div className='lg:flex justify-center lg:space-x-8 max-w-7xl mx-auto '>
           <div className='lg:w-3/5 space-y-6 flex flex-col'>
@@ -36,7 +36,7 @@ const Features1 = () => {
             <div className={`flex flex-col sm:flex-row border-8 border-gray-900 hover:shadow-xl rounded-3xl p-12 gap-y-6 sm:gap-x-10 items-center flex-1 ${colors[0]} hover:scale-105 transition duration-300 ease-in-out`}>
               <img
                   src="/assets/f1/insight.png"
-                  alt="gamification"
+                  alt="health insights"
                   className="w-60"
                 />
               <div className='text-left'>
@@ -52,7 +52,7 @@ const Features1 = () => {
               </div>
               <img
                 src="/assets/f1/lock.png"
-                alt="gamification"
+                alt="security"
                 className="w-60"
               />
             </div>

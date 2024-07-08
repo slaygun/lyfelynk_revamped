@@ -20,8 +20,8 @@ const Navbar = () => {
   return (
     <nav className="fixed p-4 w-full z-50 top-0 space-y-2">
       <div className="w-full h-full fixed inset-0 pointer-events-none -z-10">
-        <div className="circlePosition w-11/12 h-11/12 bg-[#367ed142] rounded-[100%] absolute -z-10 blur-[100px] flex justify-center items-center">
-          <div className="circle w-[17rem] h-[17rem] bg-[#5743ee42] rounded-[100%]" />
+        <div className="circlePosition w-11/12 h-11/12 bg-[#367ed15b] rounded-[100%] absolute -z-10 blur-[100px] flex justify-center items-center">
+          <div className="circle w-[17rem] h-[17rem] bg-[#5743ee56] rounded-[100%]" />
         </div>
       </div>
 

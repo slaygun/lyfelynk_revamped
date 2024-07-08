@@ -6,7 +6,8 @@ import ShinyBadgeButton from '../components/ShinyBadge';
 
 const Hero = () => {
   return (
-    <section className="z-10 py-6 md:py-12 px-6 mt-32 md:mt-36">
+    <section className="relative z-10 py-6 md:py-12 px-6 mt-32 md:mt-36">
+      <div className='absolute bottom-32 -z-[2] w-1/3 h-2/3 rounded-full shadow__gradient' />
       <div className="container mx-auto flex flex-col md:flex-row items-center">
         <div className="flex flex-col items-center md:items-start md:w-1/2">
           <h1 className="font-space-grotesk tracking-tighter text-6xl md:text-8xl font-bold text-center md:text-left">
