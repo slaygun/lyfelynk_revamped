@@ -27,8 +27,11 @@ const Features1 = () => {
     <section id="features" className="pt-6 pb-12 md:pt-12 md:pb-24 px-6">
       <div className="container mx-auto text-center">
         {/* <ShinyBadgeButton text="Lorem Ipsum Sum" /> */}
-        <h1 className='pt-6 pb-12 font-bold tracking-tighter text-3xl md:text-5xl'>
-          Personalized Health Solutions
+        <h1 className='pt-6 pb-12 font-medium tracking-tighter text-3xl md:text-5xl'>
+          <span className="bg-gradient-to-bl from-pink-500 via-indigo-500 to-sky-500 text-transparent bg-clip-text">
+            Personalised{' '}
+          </span>
+          Health Solutions
         </h1>
         <div className='lg:flex justify-center lg:space-x-8 max-w-7xl mx-auto '>
           <div className='lg:w-3/5 space-y-6 flex flex-col'>

@@ -28,8 +28,8 @@ filter: blur(60px);
 }
 
 .shadow__gradient {
-  background: linear-gradient(90deg, #4f00b67e 0%, #36cce044 100%);
-  filter: blur(300px);
+  background: linear-gradient(90deg, #4f00b67e 0%,#3f65917e 50%, #36cce044 100%);
+  filter: blur(120px);
 }
 
 .loader {

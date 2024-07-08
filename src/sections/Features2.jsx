@@ -3,32 +3,32 @@ import ShinyBadgeButton from '../components/ShinyBadge';
 
 const cardData = [
   {
-    badge: 'Earn',
+    badge: 'EARN',
     badgeColor: 'bg-pink-400',
     text: 'Monetize Your Health Data',
     description: 'Join Lyfelynk\'s Data Marketplace to ethically sell your health data. Empower research and innovation while earning rewards. Your data, your terms. Contribute to a healthier future.',
-    image: '/assets/bento/impactiso.png', 
+    image: '/assets/bento/rewardsiso.png', 
   },
   {
-    badge: 'Impact',
+    badge: 'IMPACT',
     badgeColor: 'bg-blue-400',
     text: 'Drive Healthcare Innovation',
     description: 'Share your health data to support groundbreaking research. Help advance medical discoveries and improve healthcare outcomes. Maintain control over your information. Be a part of the change.',
     image: '/assets/bento/impactiso.png', 
   },
   {
-    badge: 'Secure',
+    badge: 'SECURE',
     badgeColor: 'bg-teal-400',
     text: 'Unmatched Security and Privacy',
     description: 'Lyfelynk ensures your data is protected with top-tier blockchain security. Your information is encrypted and private. Accessible only to you and authorized parties. Trust in our robust security measures.',
     image: '/assets/bento/protectioniso.png', 
   },
   {
-    badge: 'Private',
+    badge: 'PRIVATE',
     badgeColor: 'bg-purple-400',
     text: 'AI-Powered Data Anonymization',
     description: 'Our AI models automatically remove private information from your documents. Ensure your data can be safely shared and sold. Protect your privacy without compromise. Share data confidently.',
-    image: '/assets/bento/protectioniso.png', 
+    image: '/assets/bento/privacyiso.png', 
   },
 ];
 
@@ -36,9 +36,9 @@ const Features2 = () => {
   return (
     <section className='py-12 md:py-24 px-6'>
       <div className='container mx-auto text-center'>
-        <ShinyBadgeButton text="Advanced Health Solutions" />
-        <h1 className='pt-6 pb-12 font-bold tracking-tighter text-3xl md:text-5xl'>
-          Ethical Data Sourcing and DeAI Analytics
+        <ShinyBadgeButton text="Data Empowerment" />
+        <h1 className='pt-6 pb-12 font-medium tracking-tighter text-3xl md:text-5xl'>
+          Revolutionizing Healthcare: Monetize, Innovate, Protect
         </h1>
         <div className='md:flex justify-center mx-auto max-w-6xl md:space-x-6 gap-y-6'>
           {/* first column */}
