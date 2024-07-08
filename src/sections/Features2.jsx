@@ -1,5 +1,9 @@
 import React from 'react';
 import ShinyBadgeButton from '../components/ShinyBadge';
+import SharingData from '../components/SharingData';
+import { Gem } from 'lucide-react';
+import AccessData from '../components/AnalyzingData';
+import AnonData from '../components/AnonDara';
 
 const cardData = [
   {
@@ -46,8 +50,10 @@ const Features2 = () => {
             {cardData.slice(0, 2).map((card, index) => (
               <div key={index} className="relative border border-gray-800 rounded-3xl bg-cover bg-center text-left" style={{ backgroundImage: "url('/assets/grid.png')" }}>
                 <button className={`${card.badgeColor} py-1 px-2 m-4 rounded-lg text-sm font-mono`}>{card.badge}</button>
-                <img src={card.image} alt={card.badge} className='w-96 mx-auto'/>
-                <div className='p-12 text-left'>
+                <img src={card.image} alt={card.badge} className='w-72 sm:w-96 mx-auto'/>
+                <div className='relative p-12 text-left'>
+                {index === 0 && <Gem className='absolute p-3 text-pink-400 bg-gray-800 bg-opacity-50 w-16 h-16 border border-pink-400 rounded-xl -top-8'/>}
+                  {index === 1 && <SharingData className="absolute -top-4 right-4" />}
                   <h1 className='font-prompt font-medium text-2xl md:text-3xl xl:text-4xl'>{card.text}</h1>
                   <p className='pt-4 text-sm text-gray-400 font-medium'>{card.description}</p>
                 </div>
@@ -57,10 +63,12 @@ const Features2 = () => {
           {/* second column */}
           <div className='md:w-1/2 space-y-6 md:mt-28'>
             {cardData.slice(2, 4).map((card, index) => (
-              <div key={index} className="relative border border-gray-800 rounded-3xl bg-cover bg-center text-left" style={{ backgroundImage: "url('/assets/grid.png')" }}>
+              <div key={index + 2} className="relative border border-gray-800 rounded-3xl bg-cover bg-center text-left" style={{ backgroundImage: "url('/assets/grid.png')" }}>
                 <button className={`${card.badgeColor} py-1 px-2 m-4 rounded-lg text-sm font-mono`}>{card.badge}</button>
-                <img src={card.image} alt={card.badge} className='w-96 mx-auto'/>
-                <div className='p-12 text-left'>
+                <img src={card.image} alt={card.badge} className='w-72 sm:w-96 mx-auto'/>
+                <div className='relative p-12 text-left'>
+                  {index === 0 && <AccessData className="absolute -top-16 left-14"/>}
+                  {index === 1 && <AnonData className="absolute -top-4 inset-x-1/2" />}
                   <h1 className='font-prompt font-medium text-2xl md:text-3xl xl:text-4xl'>{card.text}</h1>
                   <p className='pt-4 text-sm text-gray-400 font-medium'>{card.description}</p>
                 </div>
