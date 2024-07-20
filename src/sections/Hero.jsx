@@ -26,6 +26,7 @@ const Hero = () => {
           <p className="py-2 lg:pr-36 font-mono font-medium md:text-lg text-center md:text-left">
             Access all your health data with a single click and make it work for you.
           </p>
+          
         </div>
         <div className="md:w-1/2 flex justify-center">
           <img 

@@ -60,7 +60,7 @@ function Faqs() {
 
   return (
     <section id="faqs" className="py-12 md:py-24 px-8">
-      <div className="container mx-auto">
+      <div className="relative container mx-auto">
         <div className="text-center">
           <ShinyBadgeButton text='FAQs'/>
           <h1 className="py-4 text-3xl font-bold tracking-tighter md:text-5xl/none">Frequently Asked Questions</h1>

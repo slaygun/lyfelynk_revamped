@@ -29,7 +29,7 @@ filter: blur(60px);
 
 .shadow__gradient {
   background: linear-gradient(90deg, #4f00b67e 0%,#3f65917e 50%, #36cce044 100%);
-  filter: blur(120px);
+  filter: blur(200px);
 }
 
 .loader {
@@ -93,6 +93,38 @@ filter: blur(60px);
 
 .carousel-container .react-multi-carousel-arrow {
   z-index: 30; 
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.mask-image {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.infinite-scroll {
+  animation: infinite-scroll 25s linear infinite;
+}
+
+.paused .infinite-scroll {
+  animation-play-state: paused;
+}
+
+@keyframes infinite-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 
