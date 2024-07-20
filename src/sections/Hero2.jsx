@@ -13,7 +13,6 @@ const Hero2 = () => {
           <img src='/assets/trustedby/icph.png' className='w-24 md:w-52 h-auto filter grayscale hover:filter-none transition duration-500 ease-in-out' alt='ICPH' />
         </div>
       </div>
-      <div className='pb-12 text-center'> <ShinyBadgeButton text='As Seen On'/> </div>
       <InfiniteCarousel/>
     </section>
   );

@@ -16,26 +16,33 @@ function InfiniteCarousel() {
   const [paused, setPaused] = useState(false);
 
   return (
-    <div 
-      className={`w-full overflow-hidden inline-flex flex-nowrap [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] ${paused ? 'paused' : ''}`}
-      onMouseEnter={() => setPaused(true)}
-      onMouseLeave={() => setPaused(false)}
-    >
-      {[...Array(2)].map((_, index) => (
-        <ul key={index} className="flex items-center justify-start [&_li]:mx-6 sm:[&_li]:mx-12 md:[&_li]:mx-16 [&_img]:max-w-none infinite-scroll" aria-hidden={index === 1}>
-          {images.map((image, idx) => (
-            <li key={idx}>
-              <a href={image.link} target="_blank" rel="noopener noreferrer">
-                <img 
-                  src={image.image} 
-                  alt={image.alt} 
-                  className="h-8 sm:h-12 md:h-16  hover:grayscale"
-                />
-              </a>
-            </li>
-          ))}
-        </ul>
-      ))}
+    <div className='py-12'>
+      <h1 className='py-12 font-bold tracking-tighter text-3xl md:text-5xl text-center'>
+          <span className="bg-gradient-to-bl from-pink-500 via-indigo-500 to-sky-500 text-transparent bg-clip-text">
+            As Seen On{' '}
+          </span>
+        </h1>
+      <div 
+        className={`w-full overflow-hidden inline-flex flex-nowrap [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] ${paused ? 'paused' : ''}`}
+        onMouseEnter={() => setPaused(true)}
+        onMouseLeave={() => setPaused(false)}
+      >
+        {[...Array(2)].map((_, index) => (
+          <ul key={index} className="flex items-center justify-start [&_li]:mx-6 sm:[&_li]:mx-12 md:[&_li]:mx-16 [&_img]:max-w-none infinite-scroll" aria-hidden={index === 1}>
+            {images.map((image, idx) => (
+              <li key={idx}>
+                <a href={image.link} target="_blank" rel="noopener noreferrer">
+                  <img 
+                    src={image.image} 
+                    alt={image.alt} 
+                    className="h-8 sm:h-12 md:h-16  hover:grayscale"
+                  />
+                </a>
+              </li>
+            ))}
+          </ul>
+        ))}
+      </div>
     </div>
   );
 }
