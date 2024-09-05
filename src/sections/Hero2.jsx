@@ -1,6 +1,7 @@
 import React from 'react';
 import ShinyBadgeButton from '../components/ShinyBadge';
 import InfiniteCarousel from '../components/InfiniteCarousel';
+import OurPartners from '../components/OurPartners';
 
 const Hero2 = () => {
   return (
@@ -14,6 +15,7 @@ const Hero2 = () => {
         </div>
       </div>
       <InfiniteCarousel/>
+      <OurPartners/>
     </section>
   );
 };
