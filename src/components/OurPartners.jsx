@@ -1,100 +1,76 @@
-import { UserPlus } from "lucide-react";
+import { Instagram } from "lucide-react"
 
-const OurPartners = () => {
-  const data = [
-    {
-      image: "/assets/partners/swati.jpg",
-      username: "shine.with.swati",
-      posts: 473,
-      followers: "165K",
-      following: 385,
-      name: "Shine with Swati",
-      link: "https://www.instagram.com/shine.with.swati/",
-    },
-    {
-      image: "/assets/partners/charul.jpg",
-      username: "career_gpt_",
-      posts: 303,
-      followers: "248K",
-      following: 5,
-      name: "Charul Sharma",
-      link: "https://www.instagram.com/career_gpt_",
-    },
-    {
-      image: "/assets/partners/web3gpt.jpg",
-      username: "web3gpt",
-      posts: 214,
-      followers: "46.5K",
-      following: 7,
-      name: "Web3 GPT",
-      link: "https://www.instagram.com/web3gpt",
-    },
-    {
-      image: "/assets/partners/web3raza.jpg",
-      username: "web3raza",
-      posts: 136,
-      followers: "86.1K",
-      following: 10,
-      name: "Web3 Raza",
-      link: "https://www.instagram.com/web3raza",
-    }
-  ];
+const partners = [
+  {
+    image: "/assets/partners/swati.jpg",
+    username: "shine.with.swati",
+    name: "Shine with Swati",
+    link: "https://www.instagram.com/shine.with.swati/",
+    info: "Joyful Learning Expert, LMA Women’s Forum CoChair, certified in Therapeutic Dance, sharing content on confidence and happy learning.",
+  },
+  {
+    image: "/assets/partners/charul.jpg",
+    username: "career_gpt_",
+    name: "Charul Sharma",
+    link: "https://www.instagram.com/career_gpt_",
+    info: "Insights on job search, learning, and growth. Brand Ambassador for @udemy & @icphub_in. Partnerships: meet@careergpt.net.",
+  },
+  {
+    image: "/assets/partners/web3gpt.jpg",
+    username: "web3gpt",
+    name: "Web3 GPT",
+    link: "https://www.instagram.com/web3gpt",
+    info: "Your guide to the future of Web3, blockchain, and decentralized technologies. Incubated by @icphub_in",
+  },
+  {
+    image: "/assets/partners/web3raza.jpg",
+    username: "web3raza",
+    name: "Web3 Raza",
+    link: "https://www.instagram.com/web3raza",
+    info: "Guide to crypto profits at @web3raza. Specializing in breaking down crypto news and education. Incubated by @icphub_in",
+  }
+]
 
+export default function OurPartners() {
   return (
-    <div className="max-w-xs sm:max-w-2xl xl:max-w-7xl mx-auto p-6 md:p-12">
-      <h1 className="pb-12 font-bold tracking-tighter text-3xl md:text-5xl text-center">Our Partners</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
-        {data.map((item, index) => (
-          <a 
-            key={index} 
-            href={item.link} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="p-4 bg-gray-800 rounded-lg shadow-lg block"
-          >
-            <div className="flex justify-center">
-              <div className="relative w-32 h-32">
-                <img
-                  src={item.image}
-                  alt={`Profile picture of ${item.username}`}
-                  className="w-full h-full rounded-full object-cover border-4 border-gradient-to-r from-yellow-400 via-pink-500 to-purple-600"
+    <section className="container mx-auto px-4 py-12">
+      <h1 className="text-3xl md:text-5xl font-bold tracking-tighter text-center mb-12">Our Partners</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        {partners.map((partner, index) => (
+          <div key={index} className="flex flex-col p-4 border border-gray-600 rounded-lg bg-transparent">
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12">
+                <img 
+                  className="rounded-full border-2 border-primary w-full h-full object-cover"
+                  src={partner.image}
+                  alt={`Profile picture of ${partner.username}`}
                 />
               </div>
-            </div>
-            <div className="mt-4 text-center">
-              <h1 className="text-xl font-bold">{item.username}</h1>
-              <div className="flex items-center justify-center mt-2 space-x-2">
-                <button className="bg-blue-500 text-white font-bold px-4 py-1 rounded-lg">
-                  Follow
-                </button>
-                <button className="bg-gray-700 text-white font-bold px-4 py-1 rounded-lg">
-                  Message
-                </button>
-                <button className="bg-gray-700 text-white font-bold px-2 py-1 rounded-lg">
-                  <UserPlus className="p-1" />
-                </button>
+              <div className="flex flex-col">
+                <h2 className="text-lg font-semibold">{partner.username}</h2>
+                <p className="text-sm text-gray-500">{partner.name}</p>
               </div>
-              <div className="flex justify-center mt-4 space-x-8">
-                <div className="text-center">
-                  <span className="font-bold">{item.posts}</span>
-                  <p className="text-sm text-gray-400">posts</p>
-                </div>
-                <div className="text-center">
-                  <span className="font-bold">{item.followers}</span>
-                  <p className="text-sm text-gray-400">followers</p>
-                </div>
-                <div className="text-center">
-                  <span className="font-bold">{item.following}</span>
-                  <p className="text-sm text-gray-400">following</p>
-                </div>
-              </div>
-              <h2 className="mt-4 font-bold">{item.name}</h2>
             </div>
-          </a>
+            <div className="mt-4">
+              <p className="text-sm">{partner.info}</p>
+            </div>
+            <div className="mt-auto pt-4 text-center">
+              <a
+                href={partner.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block w-full bg-gradient-to-r from-pink-500 to-yellow-500 text-white py-2 rounded-lg text-sm font-medium"
+                style={{
+                  background: "linear-gradient(45deg, #fd5949, #d6249f, #285AEB)",
+                  color: "#fff"
+                }}
+              >
+                <span className="flex justify-center items-center gap-2"> Follow on <Instagram /> </span>
+              </a>
+            </div>
+          </div>
         ))}
       </div>
-    </div>
-  );
-};
-
-export default OurPartners;
+    </section>
+  )
+}

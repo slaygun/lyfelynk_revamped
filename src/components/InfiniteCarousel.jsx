@@ -16,12 +16,12 @@ function InfiniteCarousel() {
   const [paused, setPaused] = useState(false);
 
   return (
-    <div className='py-12'>
-      <h1 className='py-12 font-bold tracking-tighter text-3xl md:text-5xl text-center'>
+    <div className='pb-12'>
+      {/* <h1 className='py-12 font-bold tracking-tighter text-3xl md:text-5xl text-center'>
           <span className="bg-gradient-to-bl from-pink-500 via-indigo-500 to-sky-500 text-transparent bg-clip-text">
             As Seen On{' '}
           </span>
-        </h1>
+        </h1> */}
       <div 
         className={`w-full overflow-hidden inline-flex flex-nowrap [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] ${paused ? 'paused' : ''}`}
         onMouseEnter={() => setPaused(true)}
