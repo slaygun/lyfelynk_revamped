@@ -46,20 +46,20 @@ const Timeline = () => {
           </h2>
 
           {/* Timeline Section */}
-          <ol className="relative border-l-2 border-gray-300 dark:border-gray-700 ml-4">
+          <ol className="relative border-l-4 border-gray-300 dark:border-gray-600 ml-4">
             {section.events.map((event, index) => (
               <li key={index} className="mb-12 ml-6 group">
-                <div className="absolute w-6 h-6 bg-white rounded-full -left-3.5 border border-gray-300 dark:border-gray-700 flex items-center justify-center group-hover:bg-blue-500 transition-all duration-300">
-                  <Circle size={16} className="text-gray-500 group-hover:text-white" />
+                <div className="absolute w-6 h-6 bg-gray-200 dark:bg-gray-700 rounded-full -left-4 border border-gray-400 dark:border-gray-600 flex items-center justify-center group-hover:bg-blue-500 transition-all duration-300">
+                  <Circle size={16} className="text-gray-500 dark:text-gray-300 group-hover:text-white" />
                 </div>
-                <time className="mb-1 text-sm font-medium leading-none text-gray-400 dark:text-gray-500">
+                <time className="mb-1 text-sm font-medium leading-none text-gray-500 dark:text-gray-400">
                   {event.time}
                 </time>
-                <div className="flex items-center justify-between">
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white transition-colors duration-300 group-hover:text-blue-500">
+                <div className="flex items-center justify-between bg-gray-50 dark:bg-gray-800 p-4 rounded-lg shadow group-hover:bg-blue-50 dark:group-hover:bg-gray-700 transition-all duration-300">
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-blue-600">
                     {event.title}
                   </h3>
-                  <span className="text-gray-500 dark:text-gray-400 group-hover:text-blue-500 transition-colors duration-300">
+                  <span className="text-gray-500 dark:text-gray-400 group-hover:text-blue-600 transition-colors duration-300">
                     {event.icon}
                   </span>
                 </div>

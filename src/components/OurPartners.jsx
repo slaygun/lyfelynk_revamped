@@ -35,7 +35,7 @@ export default function OurPartners() {
   return (
     <section className="container mx-auto px-4 py-12">
       <h1 className="text-3xl md:text-5xl font-bold tracking-tighter text-center mb-12">Our Partners</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6">
         {partners.map((partner, index) => (
           <div key={index} className="flex flex-col p-4 border border-gray-600 rounded-lg bg-transparent">
             <div className="flex items-center gap-4">

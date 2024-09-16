@@ -10,12 +10,12 @@ const Hero = () => {
       <div className='absolute bottom-32 -z-[2] w-1/3 h-2/3 rounded-full shadow__gradient' />
       <div className="container mx-auto flex flex-col md:flex-row items-center">
         <div className="flex flex-col items-center md:items-start md:w-1/2">
-          <h1 className="font-space-grotesk tracking-tighter text-6xl md:text-8xl font-bold text-center md:text-left">
-            Digitally<br/>
-            <span className="bg-gradient-to-bl from-pink-500 via-indigo-500 to-sky-500 text-transparent bg-clip-text">
-              Linking
+        <br/><h1 className="font-space-grotesk tracking-tighter text-6xl md:text-8xl font-bold text-center md:text-left">
+            Access.
+            <br/><span className="bg-gradient-to-bl from-pink-500 via-indigo-500 to-sky-500 text-transparent bg-clip-text">
+              Track.
             </span>
-            <br /> your Health.
+            <br/>Monetize <br/>Your Health.
           </h1>
 
           <div className="py-4 flex space-x-4">
